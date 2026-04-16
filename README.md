@@ -30,3 +30,32 @@ fastapi
 uvicorn
 openai
 pydantic
+
+
+
+# =========================
+# 📘 README.md
+# =========================
+# Agentic AI MVP
+
+## Run Locally
+
+```bash
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+## Test API
+
+POST http://127.0.0.1:8000/execute
+
+Body:
+{
+  "goal": "Analyze why sales dropped last month"
+}
+
+## Next Steps
+- Add multiple agents
+- Add task queue (Celery/Redis)
+- Add frontend (React)
+- Add memory layer
